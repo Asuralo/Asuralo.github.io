@@ -1,17 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[My Octopress Blog]]></title>
+  <title><![CDATA[Asuralo]]></title>
   <link href="http://asuralo.me/atom.xml" rel="self"/>
   <link href="http://asuralo.me/"/>
-  <updated>2014-04-16T22:04:07+08:00</updated>
+  <updated>2014-04-18T00:21:21+08:00</updated>
   <id>http://asuralo.me/</id>
   <author>
-    <name><![CDATA[Your Name]]></name>
+    <name><![CDATA[AsuraLo]]></name>
     
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Placebo]]></title>
+    <link href="http://asuralo.me/blog/2014/04/17/placebo/"/>
+    <updated>2014-04-17T00:00:00+08:00</updated>
+    <id>http://asuralo.me/blog/2014/04/17/placebo</id>
+    <content type="html"><![CDATA[<p><em><strong>&ldquo;A friend in need, a friend indeed.&rdquo;</strong></em></p>
+
+<p>早上还没爬下床，就看到了悠悠发来的微信。稍微晃了晃神儿，待时间凑到八点便一起身下了床。蹑手蹑脚的走向洗漱间。走肾，刷牙，又是一阵震动。</p>
+
+<p>“Placebo,快去听听！它还有一段隐藏音轨，非常黄暴。”<br/>
+“新专？”<br/>
+“不是啊，老早的。”<br/>
+“without you I&rsquo;m nothing”</p>
+
+<p>原来就是pure morning的那张专辑啊。“A friend in need a friend indeed.”真的好喜欢这句话啊。</p>
+
+<p>不行不行，现在口好干。下午打了橄榄球晚上又去游了泳。上床休息啦！眼睛还没到睁不开的地步，不过，估计躺下就会睡着吧。晚安，我的朋友。</p>
+
+<p><em><strong>&ldquo;A friend with weed is better.&rdquo;</strong></em></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Hello World]]></title>
