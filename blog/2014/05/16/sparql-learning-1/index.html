@@ -1,0 +1,123 @@
+<p><em>Recently, I&rsquo;m studing about SPARQL. And I have read many pretty good blogs or article, thus, it&rsquo;s neccessary to record those things here. Meanwhile, this contains how I understand SPARQL.</em></p>
+
+<p><text style="font-weight:bold; font-size:20px">KEYWORDS</text>&nbsp;&nbsp;&nbsp;&nbsp;SPARQL Queries&nbsp;&nbsp;&nbsp;&nbsp;GRAPH&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+<h1>(I) Queries</h1>
+
+<p>(1). The basic query, s means subject, p means predicate and o means object.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>SELECT * 
+</span><span class='line'>WHERE
+</span><span class='line'>{
+</span><span class='line'>  ?s ?p ?o
+</span><span class='line'>}</span></code></pre></td></tr></table></div></figure>
+
+
+<p>(2). A table of some keywords. It will up-to-date.</p>
+
+<table>
+<thead>
+<tr>
+<th></th>
+<th> Keywords  </th>
+<th align="center"> Description               </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td> OPTIONAL  </td>
+<td align="center"> If we have some options.  |</td>
+</tr>
+<tr>
+<td></td>
+<td> NOT EXIST </td>
+<td align="center"> If not exist, return true. Otherwise, return false.|</td>
+</tr>
+<tr>
+<td></td>
+<td> MINUS     </td>
+<td align="center"> In most time, same as NOT EXIST.|</td>
+</tr>
+<tr>
+<td></td>
+<td> DISTINCT  </td>
+<td align="center"> Get rid of those duplicate results.|</td>
+</tr>
+<tr>
+<td></td>
+<td> UNION     </td>
+<td align="center"> Search for multi-graph of multi-rdf.|</td>
+</tr>
+<tr>
+<td></td>
+<td> FILTER    </td>
+<td align="center"> It just has one arguement and the return value must be boolean.|</td>
+</tr>
+<tr>
+<td></td>
+<td> IN        </td>
+<td align="center"> To enumerate data.|</td>
+</tr>
+<tr>
+<td></td>
+<td> LIMIT     </td>
+<td align="center"> To limit the number of data which we get. |</td>
+</tr>
+<tr>
+<td></td>
+<td> OFFSET    </td>
+<td align="center"> To skip some results. |</td>
+</tr>
+<tr>
+<td></td>
+<td> ^         </td>
+<td align="center"> Reverse. |</td>
+</tr>
+</tbody>
+</table>
+
+
+<h1>(II) Graph</h1>
+
+<p>*In this section, I understand graph by learning keywords <strong>FROM</strong> and <strong>FROM NAMED</strong>.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>SELECT *
+</span><span class='line'>  …FROM or FROM NAMED dataset specifiers …
+</span><span class='line'>{
+</span><span class='line'>  {?s?p?o}
+</span><span class='line'>  UNION
+</span><span class='line'>  {GRAPH ?g{?s?p?o}}
+</span><span class='line'>}</span></code></pre></td></tr></table></div></figure>
+
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;(a)<strong>FROM</strong> builds only the default graph.</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;(b)<strong>FROM NAMED</strong> builds only the named graphs.</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;Like the psudo-code above, the portion GRAPH ?g{?s?p?o} means query all unnamed graphs. Thus, the code means get all triples in both the unnamed graph and named graphs.</p>
+
+<br></br>
+
+
+<h3>Reference</h3>
+
+<ol>
+<li><a href="http://www.novaspivack.com/web-3-0/defining-the-semantic-graph-what-is-it-really">Defining the Semantic Graph &ndash; What is it Really? </a></li>
+<li><a href="http://yarcdata.com/blog/?p=201">A Narrative for Understanding SPARQL&rsquo;s: FROM, FROM NAMED and GRAPH</a></li>
+<li><a href="http://www.foaf-project.org/">The Friend of a Friend (FOAF) project</a></li>
+<li><a href="http://www.imediaconnection.com/content/35588.asp">How Semantic Search is Killing the Keyword</a></li>
+</ol>
+
